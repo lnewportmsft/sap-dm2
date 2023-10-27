@@ -1,15 +1,15 @@
 {
 	"name": "ls_metadata",
-	"type": "Microsoft.Synapse/workspaces/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
-			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sap-dm-synapse-v2-metadata.database.windows.net;Initial Catalog=metadata"
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sapsynapsedmcontrol.database.windows.net;Initial Catalog=dmcontrol"
 		},
 		"connectVia": {
 			"referenceName": "AutoResolveIntegrationRuntime",
 			"type": "IntegrationRuntimeReference"
 		}
-	}
+	},
+	"type": "Microsoft.Synapse/workspaces/linkedservices"
 }
